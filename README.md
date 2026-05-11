@@ -1,28 +1,43 @@
-# T360Lab-Divergance-system (v1)
+<div align="center">
 
-## Telegram signal formatter
+<img src="reports/assets/preview.png" alt="T360Lab Divergance System Preview" width="720"/>
 
-Signal-only Telegram messages are formatted without sending anything to Telegram:
+</div>
 
-```python
-from src.notifications.telegram_formatter import format_signal_message
+---
 
-payload = {
-    "event": "entry_confirmed",
-    "symbol": "BTCUSDT",
-    "timeframe": "15m",
-    "side": "long",
-    "datetime": "2026-05-11 16:15:00 UTC",
-    "entry": 80820.6,
-    "stop_loss": 80100.0,
-    "take_profit": 81901.5,
-    "risk_pct": 3.0,
-    "rr": 1.5,
-    "qty": 0.42,
-    "risk_amount": 300.0,
-}
+**Divergance-system v1** — исследовательская версия торговой системы на базе RSI-дивергенций и breakout-логики.
 
-message = format_signal_message(payload)
-```
+Основная цель v1 — проверить идею, собрать базовую архитектуру, подготовить backtest/WFA-пайплайн и signal-only Telegram уведомления.
 
-Use the returned string with Telegram `parse_mode="HTML"`. The formatter is pure Python and does not include a Telegram API client.
+Система пока не предназначена для автоторговли в production.
+
+---
+
+<div align="center">
+
+## Что дальше
+
+</div>
+
+Следующие этапы:
+
+- оптимизация под production;
+- корректировка архитектуры;
+- улучшение Telegram signal UX;
+- подготовка стабильного signal-only режима;
+- дальнейшая проверка стратегии на устойчивость.
+
+---
+
+<div align="center">
+
+## Статус
+
+</div>
+
+**v1**
+
+Проект находится на этапе разработки, тестирования и архитектурной доработки.
+
+</div>
