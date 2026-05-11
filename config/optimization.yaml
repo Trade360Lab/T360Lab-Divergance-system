@@ -1,0 +1,11 @@
+optimization:
+  n_trials: 300
+  sampler_seed: 42
+  min_trades: 50
+  max_dd_pct: 30.0
+
+wfa:
+  train_window: "180D"
+  test_window: "60D"
+  step_window: "60D"
+  expanding: false

@@ -1,0 +1,7 @@
+data:
+  category: "spot"
+  symbol: "BTCUSDT"
+  interval: "15"
+  start_time: "2024-01-01 00:00:00"
+  end_time: "2026-05-11 00:00:00"
+  cache_path: "data/processed/BTCUSDT_15.parquet"

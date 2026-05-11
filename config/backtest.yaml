@@ -1,0 +1,5 @@
+backtest:
+  start_cash: 10000
+  commission: 0.0004
+  broker_leverage: 100
+  cheat_on_close: true
