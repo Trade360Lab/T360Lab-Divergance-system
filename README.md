@@ -1,6 +1,6 @@
 <div align="center">
 
-<img src="reports/assets/preview.png" alt="T360Lab Divergance System Preview" width="720"/>
+<img src="reports/preview.png" alt="T360Lab Divergance System Preview" width="720"/>
 
 </div>
 
